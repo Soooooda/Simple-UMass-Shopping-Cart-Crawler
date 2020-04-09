@@ -204,13 +204,11 @@ def create_message(sender, to, subject, message_text):
   return {'raw': base64.urlsafe_b64encode(message.as_string().encode()).decode()}
 
 
-# gsoooda@umass.edu
-# apple1sgoogle
 def main():
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
         }
-    login_data = {'userid':'XGONG','pwd':'apple1sUMASS'}
+    login_data = {'userid':'yourSpireID','pwd':'yourPassword'}
     url = 'https://www.spire.umass.edu/psp/heproda/?cmd=login&languageCd=ENG'
 
     session = requests.Session()
